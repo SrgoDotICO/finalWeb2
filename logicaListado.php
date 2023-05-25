@@ -6,7 +6,7 @@
         
         $count=mysqli_num_rows($resultado);
  ?>       
-        <table border="2px"> 
+        <table border="2px" class="responsive-table striped"> 
             <tr>
 
                 <th>Nombre Usuario</th>
@@ -18,13 +18,18 @@
      <?php   
             if ($count>0){
                 while($row = $resultado->fetch_assoc()){
+                     $nombre = $row["nombre_usuario"];
+                     $carrera = $row["carrera"];
+                     $cuenta = $row["no_cuenta"];
+                     $tel = $row["telefono"];
+                     $mail = $row["email"];
 
                      echo "<tr>";
-                     echo "<td>".$row["nombre_usuario"]."</td>";
-                     echo "<td>".$row["carrera"]."</td>";
-                     echo "<td>".$row["no_cuenta"]."</td>";
-                     echo "<td>".$row["telefono"]."</td>";
-                     echo "<td>".$row["email"]."</td>";
+                     echo "<td>".$nombre."</td>";
+                     echo "<td>".$carrera."</td>";
+                     echo "<td>".$cuenta."</td>";
+                     echo "<td>".$tel."</td>";
+                     echo "<td>".$mail."</td>";
                      echo "</tr>";
                 }
             
@@ -34,6 +39,5 @@
             }
         
         ?>
-        <a href="actualizar.php"><h2>Actualizar Informacion Usuario</h2></a>
         
         </table>  

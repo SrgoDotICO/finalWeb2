@@ -1,30 +1,30 @@
-<!DOCTYPE html>
-<html lang="es">
+<?php include "header.php"; ?>
+     </div>
+   </nav>
+  <div class="container">
+  
+        <div   class="col s6 m5">
+            <div>
+                <h3>Error al iniciar</h3>
+                <form   method="POST"  action="logica/loguear.php">
+                   <div class="row">
+                     <div class="input-field col s6">
+                       <input id="cuenta" type="text" class="validate" name="no_cuenta">
+                       <label for="cuenta">Numero de Cuenta</label>
+                     </div>
+                   </div>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Login con session</title>
-</head>
+                    <div class="row">
+                      <div class="input-field col s6">
+                        <input id="password" type="password" class="validate" name="clave">
+                        <label for="password">Contraseña</label>
+                      </div>
+                    </div>
+                    <button class="btn waves-effect waves-light" type="submit" name="action">Iniciar</button>
+                </form>
+            </div>
+        </div>
 
-<body>
-    
-<h1>Login error</h1>
-<div  >
-    
-        <form method="POST" action="logica/loguear.php">
-
-            <input type="text" name="no_cuenta" placeholder="Numero de Cuenta" />
-            <br />
-            <input type="text" name="clave" placeholder="Contraseña" />
-            <br />
-
-            <button type="submit">Inicar Sesion</button>
-
-        </form>
-    
-</div>
-</body>
-
-</html>
+   
+   </div>
+<?php include "footer.php"; ?>

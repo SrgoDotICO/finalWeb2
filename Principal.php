@@ -13,7 +13,7 @@ if(!isset($no_cuenta)){
 }else{
     echo "<h1> Hola " .$row['nombre_usuario']. " tu numero de cuenta es $no_cuenta </h1>";
 //listar registros            
-
+    include "logicaListado.php";
     echo "<a href='logica/salir.php'><h2> SALIR</h2></a>";
     
     echo "<body>

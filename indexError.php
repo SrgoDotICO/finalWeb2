@@ -1,6 +1,7 @@
 <?php include "header.php"; ?>
      </div>
    </nav>
+   </div>
   <div class="container">
   
         <div   class="col s6 m5">
